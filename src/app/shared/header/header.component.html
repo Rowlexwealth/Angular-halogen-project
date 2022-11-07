@@ -1,0 +1,111 @@
+<!-- <header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-3">
+                <div class="logo">
+                    <img [src]="myLogo" alt="Logo">
+                </div>
+            </div>
+            <div class="text-end col-md-9 col-sm-9 col-9">
+                <div class="menu_icon" [class.menu_icon_Class]="menu_icon_variable"
+                (click)="openMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu" [class.menuClass]="menuVariable">
+                    <ul>
+                        <li><a routerLink="/">Home</a></li>
+                        <li><a routerLink="/">About</a></li>
+                        <li><a routerLink="/">Contact</a></li>
+                        <li><a routerLink="/">Galary</a></li>
+                        <li><a routerLink="/">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header> -->
+<!-- =============================================== -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <img class="navbar-brand" routerLink="" [src]="myLogo" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-3">
+            <!-- <mat-menu #appCompany="matMenu">
+                <button mat-menu-item routerLink="/">Company 1</button>
+                <button mat-menu-item routerLink="/">Company 2</button>
+            </mat-menu> -->
+            <button class="nav-link active" disableRipple aria-current="page" mat-flat-button routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Company <i class="bi bi-chevron-down"></i></button>
+          </li>
+          <li class="nav-item mx-3">
+            <mat-menu #appSolution="matMenu" xPosition="after" yPosition="below">
+                <button mat-menu-item [matMenuTriggerFor]="subMenu">solution 1</button>
+                <button mat-menu-item routerLink="support">Solution 2</button>
+            </mat-menu>
+            <button class="nav-link" disableRipple mat-flat-button [matMenuTriggerFor]="appSolution">Solution <i class="bi bi-chevron-down"></i></button>
+            <!-- sub-menu -->
+            <mat-menu #subMenu="matMenu">
+                <button mat-menu-item routerLink="contact" routerLinkActive="active-link">Sub-solution</button>
+                <button mat-menu-item >Sub-solution-1</button>
+                <button mat-menu-item routerLink="/">Sub-solution-2</button>
+            </mat-menu>
+          </li>
+
+          <li class="nav-item mx-3">
+            <mat-menu #appInsight="matMenu">
+                <button mat-menu-item class="nav-link" routerLink="industry" routerLinkActive="active-link">Imnsight 1</button>
+                <button mat-menu-item routerLink="support">Insight 2</button>
+            </mat-menu>
+            <button mat-flat-button disableRipple [matMenuTriggerFor]="appInsight">Insight <i class="bi bi-chevron-down"></i></button>
+          </li>
+
+          <li class="nav-item mx-3">
+            <mat-menu #appIndustry="matMenu">
+                <button mat-menu-item class="nav-link" routerLink="insight" routerLinkActive="active-link">Industry-1</button>
+                <button mat-menu-item routerLink="/">Industry-2</button>
+            </mat-menu>
+            <button mat-flat-button disableRipple [matMenuTriggerFor]="appIndustry">Industry <i class="bi bi-chevron-down"></i></button>
+          </li>
+
+          <li class="nav-item mx-3">
+            <mat-menu #appMedia="matMenu">
+                <button mat-menu-item class="nav-link" routerLink="insight" routerLinkActive="active-link">Media 1</button>
+                <button mat-menu-item routerLink="/">Media 2</button>
+            </mat-menu>
+            <button mat-flat-button disableRipple [matMenuTriggerFor]="appMedia">Media <i class="bi bi-chevron-down"></i></button>
+          </li>
+
+          <li class="nav-item mx-3">
+            <mat-menu #appSupport="matMenu" xPosition="after" yPosition="below">
+                <button mat-menu-item [matMenuTriggerFor]="subSupport">Support 1</button>
+                <button mat-menu-item [matMenuTriggerFor]="subSupportSub">Support 2</button>
+                <button mat-menu-item>Support 3</button>
+            </mat-menu>
+            <button mat-flat-button disableRipple [matMenuTriggerFor]="appSupport">Support <i class="bi bi-chevron-down"></i></button>
+            <!-- sub-menu -->
+            <mat-menu #subSupport="matMenu">
+                <button mat-menu-item class="nav-link" routerLink="insight" routerLinkActive="active-link">Sub-support-1</button>
+                <button mat-menu-item routerLink="">Sub-support-1</button>
+                <button mat-menu-item routerLink="/">Sub-support-1</button>
+            </mat-menu>
+             <!-- sub-sub-menu -->
+             <mat-menu #subSupportSub="matMenu">
+                <button mat-menu-item routerLink="/">Sub-support-2</button>
+                <button mat-menu-item routerLink="/">Sub-support-2</button>
+                <button mat-menu-item routerLink="/">Sub-support-2</button>
+            </mat-menu>
+          </li>
+        </ul>
+        <div class="ms-auto">
+          <a class="nav-link" >
+            <i class="bi bi-search"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>

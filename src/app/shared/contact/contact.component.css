@@ -1,0 +1,31 @@
+button{
+    margin-right: 3rem;
+}
+
+.navbar {
+    justify-content: space-between;
+}
+
+span{ 
+    padding-right: 1rem;
+}
+
+.center {
+    margin: 10rem;
+}
+
+mat-grid-tile {
+    background-color: blue;
+    color: white;
+}
+
+/* Cards */
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  

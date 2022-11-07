@@ -1,0 +1,36 @@
+<div class="div">
+<h2>Wlelcome to Support</h2>
+</div>
+<app-search></app-search>
+<ul>
+    <li *ngFor="let fd of food">
+        <a routerLink="/food/{{fd.id}}">
+            <img src="{{fd.imageUrl}}" alt="">
+            <div class="content">
+                <div class="name">
+                    {{fd.name}}
+                </div>
+                <span class="favorite {{fd.favourite?'':'not'}}"></span>
+                <!-- install star rating (npm install ng-starrating --force) -->
+                <!-- <div class="stars">
+                    <star-rating [value]="food.stars" [totalstars]="5" checkedcolor="red" uncheckedcolor="black" sixe="22px" [readonly]="true"></star-rating>
+                </div> -->
+                <div class="product-item-footer">
+                    <div class="origins">
+                        <span *ngFor="let origin of fd.origins">
+                            {{origin}}
+                        </span>
+                    </div>
+                    <div class="cook-time">
+                     {{fd.cookTime}}                        
+                    </div>
+                    <div class="price">
+                        <span>
+                            {{fd.price | currency}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>

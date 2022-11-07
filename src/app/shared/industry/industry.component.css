@@ -1,0 +1,159 @@
+.halogen {
+    margin: 0 70px;
+}
+/* step-1 */
+.bg-4 {
+    background-image:linear-gradient(rgba(65, 12, 12, 0.671), 
+       rgba(0, 0, 0, 0.829)),url(../../../assets/img/person-3.jpg);
+    height: 300px;
+    background-position: cover center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-bottom: 120px;
+}
+
+
+.step-1 {
+    padding: 80px 50px;
+    margin: 10px 30px;
+}
+
+.step-1 h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: start;
+    margin-top: 70px;
+}
+
+.hr {
+    width: 9%;
+    border: 5px solid gold;
+    font-weight: 800;
+    border-radius:5px;
+    margin: 0 50px;
+    transform:rotate3d(50%);
+    opacity: 1;
+}
+
+/* step-2 */
+.step-2 {
+    margin-bottom: 90px;
+}
+
+.Box img {
+    border-radius: 10px;
+}
+
+.stepBox h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.stepBox p {
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+}
+
+/* step-3 */
+.bg-4 {
+    background-image:linear-gradient(rgba(65, 12, 12, 0.671), 
+       rgba(0, 0, 0, 0.829)),url(../../../assets/img/person-2.jpg);
+    height: 300px;
+    background-position: center center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.step-3 {
+    padding: 30px 13px;
+}
+
+.step-3 h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.step-3 span {
+    color: gold;
+}
+
+/* step-4 */
+.step-4 h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.step-4 h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.step-4 p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* strp 5 */
+.step-5 {
+    margin: 40px 20px;
+}
+
+.step-txt {
+    text-align: center;
+    background-color: rgb(18, 164, 231);
+    height: 200px;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.step-txt h1{
+    font-size: 25px;
+    color: white;
+}
+
+.step-txt p{
+    font-size: 20px;
+    color: white;
+}
+
+/* step-6 */
+.stepBox h1 {
+    font-size: 15px;
+    color: black;
+}
+
+.stepBox h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
+
+.stepBox p {
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.content a {
+    text-decoration: none;
+    background-color: gold;
+    color: black;
+    font-weight: 700;
+    padding: 15px 9px;
+    border-radius: 5px;
+}
+
+.content a:hover {
+    background-color: #fff;
+    color: black;
+}

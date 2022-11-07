@@ -1,0 +1,16 @@
+.navbar .navbar-nav .nav-link 
+{
+    color: var(--secondary-color);
+}
+
+.navbar .navbar-nav .nav-link.active-link 
+{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.container-fluid {
+    margin: 0 60px;
+}
+
+

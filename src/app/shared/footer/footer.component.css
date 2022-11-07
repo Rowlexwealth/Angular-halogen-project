@@ -1,0 +1,54 @@
+/*====== FOOTER section ====*/
+.footer-banner {   
+    background-color: silver;
+    height: auto;
+    padding: 70px 50px;
+    margin: 40px 0;
+}
+
+.footer-banner h4 {
+    padding-left: 30px;
+    font-size: 25px;
+    color: Black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-text ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-text ul li{
+    padding: 10px 0;
+    list-style: none;
+}
+
+.footer-last {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-last p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.social {
+    letter-spacing: 15px;
+}
+.social i {
+    font-size: 30px;
+}
+
+
+
+@media (max-width: 520px) {
+    .footer-last {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    }
+}

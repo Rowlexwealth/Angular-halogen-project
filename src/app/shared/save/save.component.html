@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="save-p">
+        <div class="row">
+            <h2>Our Client save</h2>
+            <div *ngIf="images && images.length > 0" class="carousel-container">
+                <div class="save">
+                    <img *ngFor="let image of images; let i=index"
+                    [src]="image.imageSrc" [alt]="image.imageAlt"
+                    [ngClass]="{'image-active': selectedIndex === i}">
+
+                    <img *ngFor="let image of images; let i=index"
+                    [src]="image.imageSrc" [alt]="image.imageAlt"
+                    [ngClass]="{'image-active': selectedIndex === i}">
+                    
+                    <img *ngFor="let image of images; let i=index"
+                    [src]="image.imageSrc" [alt]="image.imageAlt"
+                    [ngClass]="{'image-active': selectedIndex === i}">
+
+                    <img *ngFor="let image of images; let i=index"
+                    [src]="image.imageSrc" [alt]="image.imageAlt"
+                    [ngClass]="{'image-active': selectedIndex === i}">
+                </div>
+                <!-- Go to app.component.ts -->
+                <div *ngIf="indicators" class="carousel-dot-container">
+                    <span *ngFor="let dot of images; let i=index" class="dot" 
+                    [ngClass]="{'active': selectedIndex === i}" 
+                    (click)="selectImage(i)">    
+                    </span>
+                </div>
+                <button *ngIf="controls" class="btn-carousel btn-prev" (click)="onPrevClick()">
+                    <i class="bi bi-arrow-left icon-carousel icon-prev"></i>
+                </button>
+                <button *ngIf="controls" class="btn-carousel btn-next" (click)="onNextClick()">
+                    <i class="bi bi-arrow-right icon-carousel icon-next" ></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,304 @@
+.halogen {
+    margin: 0 55px;
+}
+
+.banner {
+    background-image: url(../../../assets/img/person-2.jpg);
+    height: 800px;
+    background-position: center center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.content {
+    position: relative;
+    left: 6%;
+    top: 50%;
+}
+
+.content h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.content h2{
+    text-transform: uppercase;
+    color: gold;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.content a, .step {
+    text-decoration: none;
+    background-color: gold;
+    color: black;
+    font-weight: 700;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.content a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+/* step-2 */
+.stepBox {
+    margin-top: 50px;
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+
+.stepBox h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.stepBox p {
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+    text-align: justify;
+}
+
+/* step-3 */
+.step-3 h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+/* step-4 */
+.bg-4 {
+    background-image:linear-gradient(rgba(65, 12, 12, 0.671), 
+       rgba(0, 0, 0, 0.829)),url(../../../assets/img/person-2.jpg);
+    height: 300px;
+    background-position: center center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.step-4 {
+    padding: 100px 80px;
+}
+
+.step-4 h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.step-4 span {
+    color: gold;
+}
+
+/* step-5 */
+.step-5 {
+    margin-top: 100px;
+}
+
+.step-6 {
+    background-color: rgba(192, 192, 192, 0.336);
+    border-radius: 10px;
+    /* padding-bottom: 90px; */
+    margin-top: 80px;
+}
+
+.step-6 h1 {
+    font-size: 25px;
+    padding: 70px 70px;
+}
+
+.step-6 img {
+    border: 1px solid black;
+}
+
+.icon {
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.63);
+    height: 30%;
+    width: 30%;
+    margin-top: 70px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.step-7 {
+    margin: 100px 0;
+}
+
+.step-7 h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.step-7 h1 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.classic img {
+    border-radius: 100%;
+    width: 40%;
+    height: 100%;
+}
+
+.classic {
+    margin-bottom: 20px;
+}
+
+.text {
+    margin-top: 40px;
+    margin-left: 15px;
+}
+
+.text h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* step-8 */
+.bg-8 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.836), 
+       rgba(0, 0, 0, 0.952)),url(../../../assets/img/person-2.jpg);
+    height: 380px;
+    background-position: center center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.step-8 {
+    text-align: center;
+}
+
+.step-8 h1 {
+    color: #fff;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.step-8 p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.step-8 a {
+    text-decoration: none;
+    background-color: #fff;
+    color: black;
+    font-weight: 700;
+    padding: 15px 40px;
+    border-radius: 5px;
+}
+
+.step-8 a:hover {
+    background-color: gold;
+    color: black;
+}
+
+/* carousel */
+
+.btn-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    padding: 0 60px;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    cursor: pointer;
+}
+
+
+.icon-carousel {
+    color: white;
+    background-color: black;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+    transition: all 0.15s ease;
+    margin: 10px 10px;
+    padding-top: 4px;
+}
+
+.icon-carousel:hover {
+    opacity: 0.9;
+}
+
+.icon-carousel:active {
+    opacity: 0.5;
+}
+
+.icon-prev {
+    font-size: 40px;
+}
+
+@media (max-width: 400px) {
+    .banner {
+        height: 700px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .content h2 {
+        font-size: 35px;
+    }
+
+    .stepBox h1 {
+        font-size: 26px;
+    }
+
+    .stepBox {
+        padding: 20px 0;
+    }
+
+    .step-3 h1 {
+        font-size: 20px;
+    }
+
+    .step-4 h1 {
+        padding-top: 50px;
+        font-size: 28px;
+    }
+
+    .step-6 h1 {
+        font-size: 40px;
+        padding: 30px 45px;
+    }
+
+    .step-7 h1 {
+        font-size: 27px;
+    }
+
+    .text {
+        margin-top: 5px;
+    }
+
+    .step-8 h1 {
+        font-size: 25px;
+        margin-top: 80px;
+    }
+
+    .btn-carousel {
+        display: flex;
+        height: 10px;
+        padding: 0 60px;
+        background: 0 0;
+        border: 0;
+        cursor: pointer;
+    }
+}

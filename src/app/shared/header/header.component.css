@@ -1,0 +1,107 @@
+header {
+    padding: 12px 0;
+    background: black;
+}
+
+.menu {
+    margin-top: 50px;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    list-style-type: none;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 24px;
+}
+
+.menu ul a {
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    color: gold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+@media only screen and (max-width: 999px) {
+    .menu {
+        position: absolute;
+        right: -280px;
+        top: 105px;
+        width: 280px;
+        height: 100%;
+        background: rgba(26, 24, 24, 0.829);
+    }
+    .menu ul li {
+        display: block;
+        text-align: left;
+        margin: 0;
+        padding: 10px 0 10px 26px;
+        border-bottom: 1px solid #312f2f;
+    }
+
+    .menu ul a {
+        color: white;
+    }
+
+    .menu_icon {
+        display: inline-block;
+        position: relative;
+        right: 0;
+        top: 55px;
+    }
+
+    /* about-us */
+    .menu_icon span {
+        width: 32px;
+        height: 3px;
+        background: #fff;
+        display: block;
+        transition: 0.2s ease-in-out;
+    }
+
+    .menu_icon span:nth-child(2){
+        margin: 4px 0;
+    }
+
+    .menu_icon_Class span:nth-child(2){
+        display: none;
+    }
+
+    .menu_icon_Class span:nth-child(1){
+        transform: rotate(40deg);
+    }
+
+    .menu_icon_Class span:nth-child(3){
+        transform: rotate(-40deg);
+    }
+
+    /* to swing either right/left */
+    .menuClass{
+        right: 0;
+        transition: 0.4s ease-in-out;
+    }
+}
+
+/* =============== */
+.navbar .navbar-nav .nav-link 
+{
+    color: var(--secondary-color);
+}
+
+.navbar .navbar-nav .nav-link.active-link 
+{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.container-fluid {
+    margin: 0 45px;
+}

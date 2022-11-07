@@ -1,0 +1,359 @@
+<div class="container">
+    <mat-toolbar color="primary" class="navbar">
+        <div>Logo</div>
+        <div>
+            <mat-menu #appCompany="matMenu">
+                <button mat-menu-item routerLink="/">Company 1</button>
+                <button mat-menu-item routerLink="/">Company 2</button>
+            </mat-menu>
+            <button mat-flat-button [matMenuTriggerFor]="appCompany">Company</button>
+            <!-- ======================================================================== -->
+            <mat-menu #appSolution="matMenu" xPosition="after" yPosition="below">
+                <button mat-menu-item [matMenuTriggerFor]="subMenu">solution 1</button>
+                <button mat-menu-item>Solution 2</button>
+            </mat-menu>
+            <button class="nav-link" mat-flat-button [matMenuTriggerFor]="appSolution">Solution <i class="bi bi-chevron-down"></i></button>
+            <!-- sub-menu -->
+            <mat-menu #subMenu="matMenu">
+                <button mat-menu-item routerLink="contact" routerLinkActive="active-link">Sub-solution</button>
+                <button mat-menu-item routerLink="/">Sub-solution-1</button>
+                <button mat-menu-item routerLink="/">Sub-solution-2</button>
+            </mat-menu>
+            <!-- ============================================================================= -->
+            <mat-menu #appInsight="matMenu">
+                <button mat-menu-item class="nav-link" routerLink="industry" routerLinkActive="active-link">Insight 1</button>
+                <button mat-menu-item routerLink="/">Insight 2</button>
+            </mat-menu>
+            <button mat-flat-button [matMenuTriggerFor]="appInsight">Insight</button>
+            <!-- ============================================================================= -->
+            <mat-menu #appMedia="matMenu">
+                <button mat-menu-item class="nav-link" routerLink="insight" routerLinkActive="active-link">Media 1</button>
+                <button mat-menu-item routerLink="/">Media 2</button>
+            </mat-menu>
+            <button mat-flat-button [matMenuTriggerFor]="appMedia">Media <i class="bi bi-chevron-down"></i></button>
+            <!-- ========================================================================= -->
+            <mat-menu #appSupport="matMenu" xPosition="after" yPosition="below">
+                <button mat-menu-item [matMenuTriggerFor]="subSupport">Support 1</button>
+                <button mat-menu-item [matMenuTriggerFor]="subSupportSub">Support 2</button>
+                <button mat-menu-item>Support 3</button>
+            </mat-menu>
+            <button mat-flat-button [matMenuTriggerFor]="appSupport">Support</button>
+            <!-- sub-menu -->
+            <mat-menu #subSupport="matMenu">
+                <button mat-menu-item class="nav-link" routerLink="support" routerLinkActive="active-link">Sub-support-1</button>
+                <button mat-menu-item routerLink="/">Sub-support-1</button>
+                <button mat-menu-item routerLink="/">Sub-support-1</button>
+            </mat-menu>
+             <!-- sub-sub-menu -->
+             <mat-menu #subSupportSub="matMenu">
+                <button mat-menu-item routerLink="/">Sub-support-2</button>
+                <button mat-menu-item routerLink="/">Sub-support-2</button>
+                <button mat-menu-item routerLink="/">Sub-support-2</button>
+            </mat-menu>
+        </div>
+        <div>Search icon</div>
+    </mat-toolbar>
+</div>
+<!-- ============================= -->
+<!-- <div class="container">
+    <mat-menu #appMenu="matMenu" xPosition="after" yPosition="below">
+        <button mat-menu-item [matMenuTriggerFor]="subMenu" >Frontend</button>
+        <button mat-menu-item>Backend</button>
+    </mat-menu>
+    <button mat-flat-button [matMenuTriggerFor]="appMenu">Menu</button>
+    sub-menu
+    <mat-menu #subMenu="matMenu">
+        <button mat-menu-item>Angular</button>
+        <button mat-menu-item>React</button>
+        <button mat-menu-item>Vue</button>
+    </mat-menu>
+</div> -->
+<!-- ============================== -->
+<hr>
+
+
+<div class="container">
+    <p>contact works!</p>
+
+<!-- <app-slide></app-slide> -->
+<div class="mat-typography">
+    <div>This heading h1</div>
+    <div>This heading h2</div>
+</div>
+<hr>
+<!-- for text header -->
+<div class="mat-display-4">This is delay 4</div>
+<div class="mat-display-3">This is delay 3</div>
+<hr>
+<div class="mat-headline">This is heading for h1</div>
+<div class="mat-title">This is heading for h2</div>
+<div class="mat-subheading-2">This is heading for h3</div>
+<hr>
+<div class="mat-body-1">This is for body text</div>
+<div class="mat-body-2">This is for bold body text</div>
+<hr>
+
+<div class="mat-display-3">Button</div>
+<div>
+    <button mat-button color="accent" class="ms-5">Learn more</button>
+    <button mat-raised-button color="accent" class="px-5 p-2">Learn more</button>
+    <button mat-flat-button color="warm" disableRipple class="ms-5">Learn more 3</button>
+    <button mat-stroked-button class="ms-5">Learn more</button>
+</div>
+
+<div class=" container ms-5">
+    <button mat-mini-fab class="px-2">icon</button>
+    <button mat-mini-fab>fab</button>
+</div>
+
+<section class="container">
+    <div class="example-label">Basic</div>
+    <div class="example-button-row">
+      <button mat-button>Basic</button>
+      <button mat-button color="primary">Primary</button>
+      <button mat-button color="accent">Accent</button>
+      <button mat-button color="warn">Warn</button>
+      <button mat-button disabled>Disabled</button>
+    </div>
+  </section>
+</div> <hr>
+
+<!-- link for icon - https://fonts.google.com/icons?icon.platform=android -->
+<div class="container">
+    <div class="mat-display-3">Icons</div>
+    <mat-icon color="primary">arrow_forward</mat-icon>
+    <mat-icon color="primary">arrow_back</mat-icon>
+    <mat-icon color="primary">arrow_drop_down</mat-icon>
+    <mat-icon color="primary">arrow_circle_left</mat-icon>
+    <mat-icon color="primary">arrow_circle_right</mat-icon>
+</div>
+<hr/>
+
+<div class="container">
+    <div class="mat-display-3">Badges</div>
+    <div class="badges">
+        <div class="p-4">
+            <span matBadge="5">Notification</span>
+        </div>
+        <div class="p-4">
+            <span matBadge="5" matBadgePosition="above before">Notification</span>
+        </div>
+        <div class="p-4">
+            <span matBadge="5" matBadgePosition="above before">Notification</span>
+        </div>
+    </div>
+</div> <hr>
+
+<!-- List -->
+<div class="container">
+    <mat-list>
+        <mat-list-item>
+            <mat-icon matListIcon>home</mat-icon>
+            <h3 matLine>Heading</h3>
+            <p matLine>Line</p>
+        </mat-list-item>
+        <div>mat-divider alternative to -hr-</div>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <mat-icon matListIcon>folder</mat-icon>
+            <h3 matLine>Heading 2</h3>
+            <p matLine>Line</p>
+        </mat-list-item>
+    </mat-list>
+
+    <div>Grig List</div>
+    <mat-grid-list cols="3" rowHeight="fit" style="height: 200px" gutterSize="10px">
+        <mat-grid-tile colspan="3">Page 1 </mat-grid-tile>
+        <mat-grid-tile>Page 2</mat-grid-tile>
+        <mat-grid-tile>Page 3</mat-grid-tile>
+        <mat-grid-tile>Page 4</mat-grid-tile>
+        <mat-grid-tile colspan="3">Page 5</mat-grid-tile>
+    </mat-grid-list>
+    <!-- rowspan="2" -->
+    <!-- rowHeight='fit' -->
+</div>
+
+<div class="container">
+    <div>Cards</div>
+    <div class="row">
+        <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Shiba Inu</mat-card-title>
+              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                bred for hunting.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-actions>
+        </mat-card>
+        <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Shiba Inu</mat-card-title>
+              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                bred for hunting.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-actions>
+        </mat-card>
+        <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Shiba Inu</mat-card-title>
+              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                bred for hunting.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>    
+        
+</div>
+<mat-divider></mat-divider>
+
+<!-- Stepper -->
+<div class="container">
+    <!-- vertical/horizontal -->
+    <mat-vertical-stepper linear>
+        <mat-step label="Shipping Address" completed="true">
+            <p>Shipping Address Details</p>
+        </mat-step>
+        <mat-step label="Billing Address" completed="true" optional>
+            <p>Billing Address Details</p>
+            <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button matStepperNext>Next</button>
+            </div>
+        </mat-step>
+        <mat-step label="Place Order" completed="false">
+            <p>Order Details</p>
+        </mat-step>
+    </mat-vertical-stepper>
+</div>
+<mat-divider></mat-divider>
+
+<!-- Input -->
+<div class="container">
+    <div>Input</div>
+    <div class="d-flex justify-content-evenly">
+        <mat-form-field floatLabel="auto" hideRequiredMarker appearance="fill" color="accent">
+            <mat-label>Name</mat-label>
+            <input matInput required>
+            <mat-hint align="end">Min 5 characters</mat-hint>
+        </mat-form-field>
+    
+        <mat-form-field floatLabel="auto" hideRequiredMarker appearance="outline" color="warn" >
+            <mat-label>Name</mat-label>
+            <input matInput required>
+            <mat-hint align="end">Min 5 characters</mat-hint>
+        </mat-form-field>
+        <!-- floatLabel --- never, always, auto -->
+        <!-- appearanc --- legacy, standard, outline, fill -->
+        <div>
+            <mat-form-field>
+                <mat-label>Topic</mat-label>
+                <mat-select [(value)]="selectedValue" multiple>
+                    <mat-option>None</mat-option>
+                    <mat-optgroup label="Web">
+                        <mat-option value="angular">Angular</mat-option>
+                        <mat-option value="react">React</mat-option>
+                        <mat-option value="vue">Vue</mat-option>
+                    </mat-optgroup>
+                    <mat-optgroup label="Mobile">
+                        <mat-option value="ionic">Iconic</mat-option>
+                        <mat-option value="reactnative">React Native</mat-option>
+                    </mat-optgroup>
+                </mat-select>
+            </mat-form-field>
+            {{selectedValue}}
+        </div>
+    </div>
+</div>
+<mat-divider></mat-divider>
+
+<div class="container">
+    <div class="d-flex justify-content-between">  
+    <form>
+        <h2>Autocomplete with filter & map</h2>
+        <mat-form-field>
+            <input type="text" matInput [matAutocomplete]="auto" [formControl]="myControl">
+            <!-- go to component.ts -->
+            <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+                <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                    {{ option }}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+    </form>
+    <!-- When working with Form, always input ReactiveFormsModule and FormsModule inside app.module.ts -->
+    <div>
+        <h2>CheckBox</h2>
+        <mat-checkbox>
+            Subscribe
+        </mat-checkbox>
+        <br>
+        <mat-checkbox labelPosition="before">
+            Subscribe
+        </mat-checkbox>
+       <br>
+        <mat-checkbox color="primary">
+            Subscribe
+        </mat-checkbox>
+        <br>
+        <mat-checkbox color="warn">
+            Subscribe
+        </mat-checkbox>
+    </div>
+
+    <div>
+        <h2>Radio Box</h2>
+        <mat-radio-group>
+            <mat-radio-button value="angular" color="warn">Angular</mat-radio-button>
+            <mat-radio-button value="react" color="warn">React</mat-radio-button>
+            <mat-radio-button value="vue" color="accent">Vue</mat-radio-button>
+        </mat-radio-group>
+    </div>
+    </div>
+    
+</div>
+<mat-divider></mat-divider>
+
+<div class="container">
+    <div class="">
+        <h2>Date Picker</h2>
+        <mat-form-field>
+            <input matInput [matDatepicker]="myDatePicker">
+            <!-- go to component.ts -->
+            <mat-datepicker-toggle [for]="myDatePicker" matSuffix></mat-datepicker-toggle>
+            <mat-datepicker #myDatePicker></mat-datepicker>
+            <!-- startView='multi-year' -->
+        </mat-form-field>
+    </div>
+</div>
